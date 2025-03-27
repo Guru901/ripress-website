@@ -1,28 +1,47 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Ripress",
-  description: "An easy to use, fast and powerful http server",
+  description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    // nav: [],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: "Getting Started",
+        link: "/getting-started",
+      },
+      {
+        text: "API",
+        collapsed: true,
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+          { text: "App", link: "/apis/app" },
+          { text: "Request", link: "/apis/request" },
+          { text: "Response", link: "/apis/response" },
+          { text: "Router", link: "/apis/router" },
+        ],
+      },
+      {
+        text: "Examples",
+        collapsed: true,
+        items: [
+          { text: "Basic", link: "/examples/basic" },
+          { text: "Blog", link: "/examples/blog" },
+        ],
+      },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "x", link: "https://github.com/vuejs/vitepress" },
+    ],
+    search: {
+      provider: "local",
+    },
+    footer: {
+      message: "Released under the MIT License.",
+    },
+  },
+});

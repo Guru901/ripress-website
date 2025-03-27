@@ -4,22 +4,20 @@ layout: home
 
 hero:
   name: "Ripress"
-  text: "An easy to use, fast and powerful http server"
-  tagline: My great project tagline
+  text: "Easy to use HTTP Server Library"
+  tagline: Blazingly Fast, Easy to use and Powerful HTTP Server Library
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Docs
+      link: /getting-started
     - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      text: Github
+      link: https://github.com/guru901/ripress
+# features:
+#   - title: Feature A
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature B
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature C
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
