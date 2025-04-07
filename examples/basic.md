@@ -42,7 +42,7 @@ async fn main() {
     );
 
     // Request params
-    app.get("/user/{name}", |req, res| async move {
+    app.get("/user/:name", |req, res| async move {
         let username = req.get_params("name").unwrap_or("Unknown");
         res.ok().text(format!("Helloo, {username}"))
     });
